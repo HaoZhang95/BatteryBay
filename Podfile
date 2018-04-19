@@ -16,7 +16,6 @@ target 'BatteryBay' do
   pod 'paper-onboarding', '~> 4.0'
   pod 'lottie-ios', '~> 2.5'
   pod 'Alamofire', '~> 4.6'
-  pod 'PageMenu', '~> 2.0'
   pod 'XCDYouTubeKit', '~> 2.5'
   pod 'INSPhotoGallery'
 	

@@ -9,31 +9,25 @@
 /* Begin PBXBuildFile section */
 		3178ECA505A23B8B83043818 /* Pods_BatteryBay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E617AA2FDEADF883CDF00EC /* Pods_BatteryBay.framework */; };
 		6A57297B208888D70073D017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57297A208888D70073D017 /* AppDelegate.swift */; };
-		6A57297D208888D70073D017 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57297C208888D70073D017 /* FirstViewController.swift */; };
-		6A57297F208888D70073D017 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57297E208888D70073D017 /* SecondViewController.swift */; };
 		6A572982208888D80073D017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A572980208888D80073D017 /* Main.storyboard */; };
 		6A572984208888D80073D017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A572983208888D80073D017 /* Assets.xcassets */; };
 		6A572987208888D80073D017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A572985208888D80073D017 /* LaunchScreen.storyboard */; };
-		6A57299820888AFB0073D017 /* ToastHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57299720888AFB0073D017 /* ToastHelper.swift */; };
-		6A57299A20888B1F0073D017 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57299920888B1F0073D017 /* Extensions.swift */; };
-		6A57299C20888B290073D017 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57299B20888B290073D017 /* NetworkHelper.swift */; };
+		FD734B582088A73B009A45A3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B572088A73B009A45A3 /* Extensions.swift */; };
+		FD734B5A2088A788009A45A3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B592088A788009A45A3 /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E617AA2FDEADF883CDF00EC /* Pods_BatteryBay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BatteryBay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A572977208888D70073D017 /* BatteryBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A57297A208888D70073D017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A57297C208888D70073D017 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		6A57297E208888D70073D017 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6A572981208888D80073D017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A572983208888D80073D017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A572986208888D80073D017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A572988208888D80073D017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A57299720888AFB0073D017 /* ToastHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastHelper.swift; sourceTree = "<group>"; };
-		6A57299920888B1F0073D017 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		6A57299B20888B290073D017 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		6CBDBA4236A72900F96595E8 /* Pods-BatteryBay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.release.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.release.xcconfig"; sourceTree = "<group>"; };
 		E669CEAF39DE60F59A6E998B /* Pods-BatteryBay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.debug.xcconfig"; sourceTree = "<group>"; };
+		FD734B572088A73B009A45A3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FD734B592088A788009A45A3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +73,12 @@
 			children = (
 				6A572988208888D80073D017 /* Info.plist */,
 				6A572980208888D80073D017 /* Main.storyboard */,
-				6A57299520888A6F0073D017 /* Config */,
-				6A57299420888A430073D017 /* Models */,
-				6A57299320888A390073D017 /* Views */,
+				FD734B562088A6FC009A45A3 /* Utils */,
+				FD734B552088A6EF009A45A3 /* AnimationFiles */,
+				FD734B542088A518009A45A3 /* Models */,
+				FD734B532088A512009A45A3 /* Views */,
+				6A57299520888A6F0073D017 /* Singletons */,
 				6A57298E208889A50073D017 /* Controllers */,
-				6A57299620888AAB0073D017 /* Tools */,
 			);
 			path = BatteryBay;
 			sourceTree = "<group>";
@@ -91,76 +86,48 @@
 		6A57298E208889A50073D017 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6A57299220888A1E0073D017 /* Profile */,
-				6A57299120888A170073D017 /* Search */,
-				6A57299020888A090073D017 /* Camera */,
-				6A57298F20888A010073D017 /* Home */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		6A57298F20888A010073D017 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				6A57297C208888D70073D017 /* FirstViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		6A57299020888A090073D017 /* Camera */ = {
-			isa = PBXGroup;
-			children = (
-				6A57297E208888D70073D017 /* SecondViewController.swift */,
-			);
-			path = Camera;
-			sourceTree = "<group>";
-		};
-		6A57299120888A170073D017 /* Search */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Search;
-			sourceTree = "<group>";
-		};
-		6A57299220888A1E0073D017 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		6A57299320888A390073D017 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		6A57299420888A430073D017 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		6A57299520888A6F0073D017 /* Config */ = {
+		6A57299520888A6F0073D017 /* Singletons */ = {
 			isa = PBXGroup;
 			children = (
 				6A57297A208888D70073D017 /* AppDelegate.swift */,
 				6A572983208888D80073D017 /* Assets.xcassets */,
 				6A572985208888D80073D017 /* LaunchScreen.storyboard */,
 			);
-			path = Config;
+			path = Singletons;
 			sourceTree = "<group>";
 		};
-		6A57299620888AAB0073D017 /* Tools */ = {
+		FD734B532088A512009A45A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6A57299B20888B290073D017 /* NetworkHelper.swift */,
-				6A57299720888AFB0073D017 /* ToastHelper.swift */,
-				6A57299920888B1F0073D017 /* Extensions.swift */,
 			);
-			path = Tools;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD734B542088A518009A45A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD734B552088A6EF009A45A3 /* AnimationFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimationFiles;
+			sourceTree = "<group>";
+		};
+		FD734B562088A6FC009A45A3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FD734B572088A73B009A45A3 /* Extensions.swift */,
+				FD734B592088A788009A45A3 /* CustomLabel.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FFADAB70B695F85E43403381 /* Pods */ = {
@@ -287,7 +254,6 @@
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/ParallaxHeader/ParallaxHeader.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -304,7 +270,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSPhotoGallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxHeader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -327,12 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A57299A20888B1F0073D017 /* Extensions.swift in Sources */,
-				6A57297F208888D70073D017 /* SecondViewController.swift in Sources */,
 				6A57297B208888D70073D017 /* AppDelegate.swift in Sources */,
-				6A57297D208888D70073D017 /* FirstViewController.swift in Sources */,
-				6A57299C20888B290073D017 /* NetworkHelper.swift in Sources */,
-				6A57299820888AFB0073D017 /* ToastHelper.swift in Sources */,
+				FD734B5A2088A788009A45A3 /* CustomLabel.swift in Sources */,
+				FD734B582088A73B009A45A3 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
