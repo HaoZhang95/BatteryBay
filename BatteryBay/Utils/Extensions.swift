@@ -55,14 +55,6 @@ extension UIColor {
         return UIColor.rgb(red: 22, green: 25, blue: 30)
     }
     
-    static func tvShowTintColor() -> UIColor {
-        return UIColor.rgb(red: 71, green: 209, blue: 243)
-    }
-    
-    static func watchListTintColor() -> UIColor {
-        return UIColor.rgb(red: 78, green: 242, blue: 192)
-    }
-    
     static func userProfileTintColor() -> UIColor {
         return UIColor.rgb(red: 162, green: 82, blue: 229)
     }
@@ -82,15 +74,6 @@ extension UIColor {
     static func pageControlTintColor() -> UIColor {
         return UIColor.rgb(red: 204, green: 204, blue: 204)
     }
-    
-    static func tvShowOddCellBackgroundColor() -> UIColor {
-        return UIColor.rgb(red: 17, green: 18, blue: 21)
-    }
-    
-    static func tvShowEvenCellBackgroundColor() -> UIColor {
-        return UIColor.rgb(red: 12, green: 13, blue: 15)
-    }
-    
 }
 
 extension UIView {

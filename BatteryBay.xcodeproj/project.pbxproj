@@ -14,6 +14,19 @@
 		6A572987208888D80073D017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A572985208888D80073D017 /* LaunchScreen.storyboard */; };
 		FD734B582088A73B009A45A3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B572088A73B009A45A3 /* Extensions.swift */; };
 		FD734B5A2088A788009A45A3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B592088A788009A45A3 /* CustomLabel.swift */; };
+		FD734B5C2088A852009A45A3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B5B2088A852009A45A3 /* CustomButton.swift */; };
+		FD734B5E2088A8AF009A45A3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B5D2088A8AF009A45A3 /* CustomTextField.swift */; };
+		FD734B612088A8D4009A45A3 /* OnBoardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B602088A8D4009A45A3 /* OnBoardingButton.swift */; };
+		FD734B632088A8ED009A45A3 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B622088A8ED009A45A3 /* CustomNavigationController.swift */; };
+		FD734B662088A915009A45A3 /* enjoy.json in Resources */ = {isa = PBXBuildFile; fileRef = FD734B642088A915009A45A3 /* enjoy.json */; };
+		FD734B672088A915009A45A3 /* done.json in Resources */ = {isa = PBXBuildFile; fileRef = FD734B652088A915009A45A3 /* done.json */; };
+		FD734B692088A9CE009A45A3 /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B682088A9CE009A45A3 /* OnBoardingPage.swift */; };
+		FD734B6C2088A9FA009A45A3 /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B6B2088A9FA009A45A3 /* OnBoardingCell.swift */; };
+		FD734B6F2088AA6A009A45A3 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B6E2088AA6A009A45A3 /* OnBoardingViewController.swift */; };
+		FD734B722088AAAA009A45A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B712088AAAA009A45A3 /* LoginViewController.swift */; };
+		FD734B752088AB57009A45A3 /* MZFRootContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B742088AB57009A45A3 /* MZFRootContainerViewController.swift */; };
+		FD734B772088AB75009A45A3 /* MZFRootContainerTransitionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B762088AB75009A45A3 /* MZFRootContainerTransitionContext.swift */; };
+		FD734B792088AB9C009A45A3 /* MZFRootContainerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B782088AB9C009A45A3 /* MZFRootContainerAnimatedTransitioning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		E669CEAF39DE60F59A6E998B /* Pods-BatteryBay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.debug.xcconfig"; sourceTree = "<group>"; };
 		FD734B572088A73B009A45A3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FD734B592088A788009A45A3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		FD734B5B2088A852009A45A3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FD734B5D2088A8AF009A45A3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		FD734B602088A8D4009A45A3 /* OnBoardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingButton.swift; sourceTree = "<group>"; };
+		FD734B622088A8ED009A45A3 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		FD734B642088A915009A45A3 /* enjoy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = enjoy.json; sourceTree = "<group>"; };
+		FD734B652088A915009A45A3 /* done.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = done.json; sourceTree = "<group>"; };
+		FD734B682088A9CE009A45A3 /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		FD734B6B2088A9FA009A45A3 /* OnBoardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCell.swift; sourceTree = "<group>"; };
+		FD734B6E2088AA6A009A45A3 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		FD734B712088AAAA009A45A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FD734B742088AB57009A45A3 /* MZFRootContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZFRootContainerViewController.swift; sourceTree = "<group>"; };
+		FD734B762088AB75009A45A3 /* MZFRootContainerTransitionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZFRootContainerTransitionContext.swift; sourceTree = "<group>"; };
+		FD734B782088AB9C009A45A3 /* MZFRootContainerAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZFRootContainerAnimatedTransitioning.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +99,12 @@
 			children = (
 				6A572988208888D80073D017 /* Info.plist */,
 				6A572980208888D80073D017 /* Main.storyboard */,
+				FD734B532088A512009A45A3 /* Views */,
+				FD734B542088A518009A45A3 /* Models */,
+				6A57298E208889A50073D017 /* Controllers */,
 				FD734B562088A6FC009A45A3 /* Utils */,
 				FD734B552088A6EF009A45A3 /* AnimationFiles */,
-				FD734B542088A518009A45A3 /* Models */,
-				FD734B532088A512009A45A3 /* Views */,
 				6A57299520888A6F0073D017 /* Singletons */,
-				6A57298E208889A50073D017 /* Controllers */,
 			);
 			path = BatteryBay;
 			sourceTree = "<group>";
@@ -86,6 +112,9 @@
 		6A57298E208889A50073D017 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FD734B732088AB36009A45A3 /* MZFRootContainerViewControllers */,
+				FD734B702088AA9C009A45A3 /* LoginViewController */,
+				FD734B6D2088AA59009A45A3 /* OnBoardingViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -103,6 +132,7 @@
 		FD734B532088A512009A45A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FD734B6A2088A9E0009A45A3 /* OnBoardingControllerView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +140,7 @@
 		FD734B542088A518009A45A3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD734B682088A9CE009A45A3 /* OnBoardingPage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +148,8 @@
 		FD734B552088A6EF009A45A3 /* AnimationFiles */ = {
 			isa = PBXGroup;
 			children = (
+				FD734B652088A915009A45A3 /* done.json */,
+				FD734B642088A915009A45A3 /* enjoy.json */,
 			);
 			path = AnimationFiles;
 			sourceTree = "<group>";
@@ -126,8 +159,46 @@
 			children = (
 				FD734B572088A73B009A45A3 /* Extensions.swift */,
 				FD734B592088A788009A45A3 /* CustomLabel.swift */,
+				FD734B5B2088A852009A45A3 /* CustomButton.swift */,
+				FD734B5D2088A8AF009A45A3 /* CustomTextField.swift */,
+				FD734B602088A8D4009A45A3 /* OnBoardingButton.swift */,
+				FD734B622088A8ED009A45A3 /* CustomNavigationController.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FD734B6A2088A9E0009A45A3 /* OnBoardingControllerView */ = {
+			isa = PBXGroup;
+			children = (
+				FD734B6B2088A9FA009A45A3 /* OnBoardingCell.swift */,
+			);
+			path = OnBoardingControllerView;
+			sourceTree = "<group>";
+		};
+		FD734B6D2088AA59009A45A3 /* OnBoardingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FD734B6E2088AA6A009A45A3 /* OnBoardingViewController.swift */,
+			);
+			path = OnBoardingViewController;
+			sourceTree = "<group>";
+		};
+		FD734B702088AA9C009A45A3 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FD734B712088AAAA009A45A3 /* LoginViewController.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		FD734B732088AB36009A45A3 /* MZFRootContainerViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD734B742088AB57009A45A3 /* MZFRootContainerViewController.swift */,
+				FD734B762088AB75009A45A3 /* MZFRootContainerTransitionContext.swift */,
+				FD734B782088AB9C009A45A3 /* MZFRootContainerAnimatedTransitioning.swift */,
+			);
+			path = MZFRootContainerViewControllers;
 			sourceTree = "<group>";
 		};
 		FFADAB70B695F85E43403381 /* Pods */ = {
@@ -204,6 +275,8 @@
 				6A572987208888D80073D017 /* LaunchScreen.storyboard in Resources */,
 				6A572984208888D80073D017 /* Assets.xcassets in Resources */,
 				6A572982208888D80073D017 /* Main.storyboard in Resources */,
+				FD734B672088A915009A45A3 /* done.json in Resources */,
+				FD734B662088A915009A45A3 /* enjoy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,9 +365,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD734B5C2088A852009A45A3 /* CustomButton.swift in Sources */,
 				6A57297B208888D70073D017 /* AppDelegate.swift in Sources */,
+				FD734B612088A8D4009A45A3 /* OnBoardingButton.swift in Sources */,
 				FD734B5A2088A788009A45A3 /* CustomLabel.swift in Sources */,
 				FD734B582088A73B009A45A3 /* Extensions.swift in Sources */,
+				FD734B772088AB75009A45A3 /* MZFRootContainerTransitionContext.swift in Sources */,
+				FD734B5E2088A8AF009A45A3 /* CustomTextField.swift in Sources */,
+				FD734B632088A8ED009A45A3 /* CustomNavigationController.swift in Sources */,
+				FD734B792088AB9C009A45A3 /* MZFRootContainerAnimatedTransitioning.swift in Sources */,
+				FD734B6C2088A9FA009A45A3 /* OnBoardingCell.swift in Sources */,
+				FD734B692088A9CE009A45A3 /* OnBoardingPage.swift in Sources */,
+				FD734B6F2088AA6A009A45A3 /* OnBoardingViewController.swift in Sources */,
+				FD734B752088AB57009A45A3 /* MZFRootContainerViewController.swift in Sources */,
+				FD734B722088AAAA009A45A3 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.backgroundColor = .white
         
-        window?.rootViewController = UIViewController()
+        let layout = UICollectionViewFlowLayout()
+        
+        let mainVC = OnBoardingViewController(collectionViewLayout: layout)
+        
+        let navVC = UINavigationController(rootViewController: mainVC)
+        
+        // let mainVC = LoginViewController()
+        
+        window?.rootViewController = navVC
         
         window?.makeKeyAndVisible()
         

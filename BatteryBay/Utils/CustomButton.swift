@@ -6,4 +6,18 @@
 //  Copyright © 2018 iosdev. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class CustomButton: UIButton {
+    override open var isSelected: Bool {
+        didSet {
+            backgroundColor = isSelected ? UIColor.mainColor() : UIColor.clear
+            if isSelected {
+                setTitleColor(.white, for: .normal)
+            } else {
+                setTitleColor(.darkGray, for: .normal)
+            }
+        }
+    }
+}
+
