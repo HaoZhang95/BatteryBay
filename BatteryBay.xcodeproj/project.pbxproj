@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3178ECA505A23B8B83043818 /* Pods_BatteryBay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E617AA2FDEADF883CDF00EC /* Pods_BatteryBay.framework */; };
 		6A57297B208888D70073D017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57297A208888D70073D017 /* AppDelegate.swift */; };
 		6A57297D208888D70073D017 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57297C208888D70073D017 /* FirstViewController.swift */; };
 		6A57297F208888D70073D017 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A57297E208888D70073D017 /* SecondViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E617AA2FDEADF883CDF00EC /* Pods_BatteryBay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BatteryBay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A572977208888D70073D017 /* BatteryBay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryBay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A57297A208888D70073D017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A57297C208888D70073D017 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		6A57299720888AFB0073D017 /* ToastHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastHelper.swift; sourceTree = "<group>"; };
 		6A57299920888B1F0073D017 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		6A57299B20888B290073D017 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		6CBDBA4236A72900F96595E8 /* Pods-BatteryBay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.release.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.release.xcconfig"; sourceTree = "<group>"; };
+		E669CEAF39DE60F59A6E998B /* Pods-BatteryBay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3178ECA505A23B8B83043818 /* Pods_BatteryBay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D34F0B03457EF850119C846 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E617AA2FDEADF883CDF00EC /* Pods_BatteryBay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A57296E208888D70073D017 = {
 			isa = PBXGroup;
 			children = (
 				6A572979208888D70073D017 /* BatteryBay */,
 				6A572978208888D70073D017 /* Products */,
+				FFADAB70B695F85E43403381 /* Pods */,
+				4D34F0B03457EF850119C846 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,6 +163,15 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		FFADAB70B695F85E43403381 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E669CEAF39DE60F59A6E998B /* Pods-BatteryBay.debug.xcconfig */,
+				6CBDBA4236A72900F96595E8 /* Pods-BatteryBay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A57298B208888D80073D017 /* Build configuration list for PBXNativeTarget "BatteryBay" */;
 			buildPhases = (
+				78345A64C5758A3AB0D4B253 /* [CP] Check Pods Manifest.lock */,
 				6A572973208888D70073D017 /* Sources */,
 				6A572974208888D70073D017 /* Frameworks */,
 				6A572975208888D70073D017 /* Resources */,
+				C6B1182D1DF5EA4FFE33AD76 /* [CP] Embed Pods Frameworks */,
+				7EF6303E9208FB918EF9C23C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +241,86 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78345A64C5758A3AB0D4B253 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BatteryBay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF6303E9208FB918EF9C23C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6B1182D1DF5EA4FFE33AD76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/INSPhotoGallery/INSPhotoGallery.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/ParallaxHeader/ParallaxHeader.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/INSPhotoGallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParallaxHeader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A572973208888D70073D017 /* Sources */ = {
@@ -360,6 +467,7 @@
 		};
 		6A57298C208888D80073D017 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E669CEAF39DE60F59A6E998B /* Pods-BatteryBay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +482,7 @@
 		};
 		6A57298D208888D80073D017 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CBDBA4236A72900F96595E8 /* Pods-BatteryBay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
