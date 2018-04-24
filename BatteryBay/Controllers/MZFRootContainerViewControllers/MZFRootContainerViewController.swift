@@ -39,6 +39,8 @@ open class MZFRootContainerViewController: UIViewController {
     
     override open func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupNotification()
     }
     
     public final func transition(to newViewController: UIViewController, shouldRetainCurrentViewController retain: Bool) {
@@ -50,12 +52,20 @@ open class MZFRootContainerViewController: UIViewController {
         currentViewController.willMove(toParentViewController: nil)
         addChildViewController(newViewController)
         
-        if transitionContext == nil {
-            transitionContext = MZFRootContainerTransitionContext(currentViewController, toVC: newViewController, containerView: view)
-            transitionContext.delegate = self
-        }
+        transitionContext = MZFRootContainerTransitionContext(currentViewController, toVC: newViewController, containerView: view)
+        transitionContext.delegate = self
         
         transitionAnimator.animateTransition(with: transitionContext)
+    }
+    
+    fileprivate func setupNotification() {
+        NotificationCenter.default.addObserver(self, selector: #selector(handleSuccessfullLogin), name: NSNotification.Name("loginOK"), object: nil)
+    }
+    
+    @objc fileprivate func handleSuccessfullLogin() {
+        let mainVC = MainTabBarController()
+        
+        self.transition(to: mainVC, shouldRetainCurrentViewController: false)
     }
 }
 
@@ -70,12 +80,14 @@ extension MZFRootContainerViewController: MZFRootContainerTransitioningContextDe
         } else {
             activatedViewController = nil
             deactivatedViewController = nil
-            
+            deactivatedViewController?.view.removeFromSuperview()
+            deactivatedViewController?.removeFromParentViewController()
         }
         
         newViewController?.didMove(toParentViewController: self)
         activatedViewController = newViewController
         newViewController = nil
+        
     }
     
     public func transitionContextDidCancelTransition() {

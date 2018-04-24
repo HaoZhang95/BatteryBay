@@ -125,6 +125,8 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
+        NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
+        
         print(123)
         
     }

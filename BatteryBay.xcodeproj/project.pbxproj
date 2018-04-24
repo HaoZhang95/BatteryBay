@@ -12,6 +12,7 @@
 		6A572982208888D80073D017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A572980208888D80073D017 /* Main.storyboard */; };
 		6A572984208888D80073D017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A572983208888D80073D017 /* Assets.xcassets */; };
 		6A572987208888D80073D017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A572985208888D80073D017 /* LaunchScreen.storyboard */; };
+		FD351F4D208FC2900060C275 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD351F4C208FC2900060C275 /* MainTabBarController.swift */; };
 		FD734B582088A73B009A45A3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B572088A73B009A45A3 /* Extensions.swift */; };
 		FD734B5A2088A788009A45A3 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B592088A788009A45A3 /* CustomLabel.swift */; };
 		FD734B5C2088A852009A45A3 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD734B5B2088A852009A45A3 /* CustomButton.swift */; };
@@ -39,6 +40,7 @@
 		6A572988208888D80073D017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CBDBA4236A72900F96595E8 /* Pods-BatteryBay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.release.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.release.xcconfig"; sourceTree = "<group>"; };
 		E669CEAF39DE60F59A6E998B /* Pods-BatteryBay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatteryBay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BatteryBay/Pods-BatteryBay.debug.xcconfig"; sourceTree = "<group>"; };
+		FD351F4C208FC2900060C275 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		FD734B572088A73B009A45A3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FD734B592088A788009A45A3 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		FD734B5B2088A852009A45A3 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		6A57298E208889A50073D017 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FD351F4B208FC2760060C275 /* MainTabBarController */,
 				FD734B732088AB36009A45A3 /* MZFRootContainerViewControllers */,
 				FD734B702088AA9C009A45A3 /* LoginViewController */,
 				FD734B6D2088AA59009A45A3 /* OnBoardingViewController */,
@@ -127,6 +130,14 @@
 				6A572985208888D80073D017 /* LaunchScreen.storyboard */,
 			);
 			path = Singletons;
+			sourceTree = "<group>";
+		};
+		FD351F4B208FC2760060C275 /* MainTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				FD351F4C208FC2900060C275 /* MainTabBarController.swift */,
+			);
+			path = MainTabBarController;
 			sourceTree = "<group>";
 		};
 		FD734B532088A512009A45A3 /* Views */ = {
@@ -367,6 +378,7 @@
 			files = (
 				FD734B5C2088A852009A45A3 /* CustomButton.swift in Sources */,
 				6A57297B208888D70073D017 /* AppDelegate.swift in Sources */,
+				FD351F4D208FC2900060C275 /* MainTabBarController.swift in Sources */,
 				FD734B612088A8D4009A45A3 /* OnBoardingButton.swift in Sources */,
 				FD734B5A2088A788009A45A3 /* CustomLabel.swift in Sources */,
 				FD734B582088A73B009A45A3 /* Extensions.swift in Sources */,

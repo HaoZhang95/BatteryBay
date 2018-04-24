@@ -27,9 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let navVC = UINavigationController(rootViewController: mainVC)
         
-        // let mainVC = LoginViewController()
         
-        window?.rootViewController = navVC
+        let rootVC = MZFRootContainerViewController(rootViewController: navVC)
+        
+        window?.rootViewController = rootVC
         
         window?.makeKeyAndVisible()
         

@@ -29,9 +29,9 @@ public protocol MZFRootContainerTransitioningContextDelegate: NSObjectProtocol {
 
 internal final class MZFRootContainerTransitionContext: NSObject, MZFRootContainerTransitioningContext {
     
-    private var _fromVC: UIViewController?
-    private var _toVC: UIViewController?
-    private var _containerVC: UIView!
+    private weak var _fromVC: UIViewController?
+    private weak var _toVC: UIViewController?
+    private weak var _containerVC: UIView!
     
     var fromViewController: UIViewController? {
         get {
