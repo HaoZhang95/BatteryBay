@@ -1,20 +1,23 @@
 //
-//  LoginViewController.swift
+//  SignUpViewController.swift
 //  BatteryBay
 //
-//  Created by Nguyen Ba Long on 19/04/2018.
+//  Created by Nguyen Ba Long on 29/04/2018.
 //  Copyright © 2018 iosdev. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class LoginViewController: UIViewController {
+class SignUpViewController: UIViewController {
+    
+    let dispatcher = NetworkingDispatcher(environment: Environment(name: "Test", host: Constant.USER_HOSTNAME))
     
     let dontHaveAnAccountButton: UIButton = {
         let button = UIButton(type: .system)
-        let attributedString = createAttributedString(firstString: "Don't have an account? ", secondString: "Sign Up")
+        let attributedString = createAttributedString(firstString: "Already have an account? ", secondString: "Sign in")
         button.setAttributedTitle(attributedString, for: .normal)
-        button.addTarget(self, action: #selector(handleShowSignUpVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleShowSignInVC), for: .touchUpInside)
         return button
     }()
     
@@ -55,7 +58,7 @@ class LoginViewController: UIViewController {
     
     let logInButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Sign In", for: .normal)
+        button.setTitle("Sign Up", for: .normal)
         button.backgroundColor = UIColor.rgb(red: 249, green: 82, blue: 132)
         button.isEnabled = false
         button.layer.cornerRadius = 5
@@ -63,7 +66,7 @@ class LoginViewController: UIViewController {
         button.setTitleColor(.white, for: .normal)
         button.isEnabled = false
         
-        button.addTarget(self, action: #selector(handleLogIn), for: .touchUpInside)
+        button.addTarget(self, action: #selector(handleSignUp), for: .touchUpInside)
         return button
     }()
     
@@ -104,12 +107,8 @@ class LoginViewController: UIViewController {
         stackView.anchor(top: logoContainerView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 100, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 150)
     }
     
-    @objc private func handleShowSignUpVC() {
-        // Handle showing sign up vc
-        
-        let signUp = SignUpViewController()
-        
-        navigationController?.pushViewController(signUp, animated: true)
+    @objc func handleShowSignInVC() {
+        navigationController?.popViewController(animated: true)
     }
     
     @objc func handleTextInputChange() {
@@ -123,11 +122,17 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @objc private func handleLogIn() {
+    @objc private func handleSignUp() {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
-        NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
+        let signUpService = UserSignUpService(username: email, password: password)
+        
+        signUpService.execute(in: dispatcher) { (user) in
+            
+        }
+        
+        //NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
         
         print(123)
         
