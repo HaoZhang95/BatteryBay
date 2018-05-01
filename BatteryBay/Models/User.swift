@@ -14,11 +14,13 @@ class User {
     let username: String
     let status: Int
     var points: Int
+    var token: String
     
-    init(json: JSON) {
+    init(json: JSON, token: String) {
         self.id = json["_id"].stringValue
         self.username = json["username"].stringValue
         self.status = json["status"].intValue
         self.points = json["points"].intValue
+        self.token = token
     }
 }

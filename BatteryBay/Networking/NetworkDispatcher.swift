@@ -31,18 +31,10 @@ public class NetworkingDispatcher: Dispatcher {
             guard let params = request.parameters else { return }
             switch params {
             case .body(let requestParams):
-                
-                let rq = try self.prepareURLRequest(for: request)
-                Alamofire.request(rq).responseString { (response) in
+                Alamofire.request(full_url, method: .post, parameters: requestParams, encoding: JSONEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
                     let response = Response((response.response, response.data, response.error), for: request)
                     completionHandler(response)
-                }
-                
-//                print(full_url)
-//                Alamofire.request(full_url, method: .post, parameters: requestParams, encoding: JSONEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
-//                    let response = Response((response.response, response.data, response.error), for: request)
-//                    completionHandler(response)
-//                })
+                })
             case .both(let bodyParams, let urlParams):
                 
                 let endcodeString = full_url.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
@@ -65,11 +57,7 @@ public class NetworkingDispatcher: Dispatcher {
                 })
                 
             default:
-                let rq = try self.prepareURLRequest(for: request)
-                Alamofire.request(rq).responseString { (response) in
-                    let response = Response((response.response, response.data, response.error), for: request)
-                    completionHandler(response)
-                }
+                ()
             }
         } else {
             let rq = try self.prepareURLRequest(for: request)

@@ -22,13 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = .white
         
         let layout = UICollectionViewFlowLayout()
-        
+
         let mainVC = OnBoardingViewController(collectionViewLayout: layout)
-        
+
         let navVC = UINavigationController(rootViewController: mainVC)
-        
-        
+
+
         let rootVC = MZFRootContainerViewController(rootViewController: navVC)
+        
+//        let rootVC = MainTabBarController()
         
         window?.rootViewController = rootVC
         

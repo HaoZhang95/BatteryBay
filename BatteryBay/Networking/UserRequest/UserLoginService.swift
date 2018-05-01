@@ -1,15 +1,17 @@
 //
-//  UserSignUpServicec.swift
+//  UserLoginService.swift
 //  BatteryBay
 //
-//  Created by Nguyen Ba Long on 30/04/2018.
+//  Created by Nguyen Ba Long on 01/05/2018.
 //  Copyright © 2018 iosdev. All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-class UserSignUpService: Service {
+class UserLoginService: Service {
+    var request: Request
+    
     func execute(in dispatcher: Dispatcher, completionHandler: @escaping (User) -> ()) {
         do {
             try dispatcher.execute(request: request, completionHandler: { (response) in
@@ -29,12 +31,10 @@ class UserSignUpService: Service {
         }
     }
     
-    var request: Request
-    
     typealias output = User
     
     init(username: String, password: String) {
-        self.request = UserRequest.signUpUser(username: username, password: password)
+        self.request = UserRequest.logInUser(username: username, password: password)
     }
     
 }

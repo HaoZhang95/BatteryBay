@@ -19,7 +19,7 @@ class MainTabBarController: UITabBarController {
     
     fileprivate func setupViewControllers() {
         
-        let mainPageViewController = templateViewController(unselectedImage: #imageLiteral(resourceName: "home"), title: "Main page", rootViewController: UIViewController())
+        let mainPageViewController = templateViewController(unselectedImage: #imageLiteral(resourceName: "home"), title: "Main page", rootViewController: MainPageViewController())
         
         // Todo: Emma and Mikeal to implement viewController for userProfile
         

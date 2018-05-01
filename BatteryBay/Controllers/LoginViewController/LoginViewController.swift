@@ -127,7 +127,21 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
         
-        NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
+        let signUpService = UserLoginService(username: email, password: password)
+        
+        let dispatcher = NetworkingDispatcher(environment: Environment(name: "Test", host: Constant.USER_HOSTNAME))
+        
+        
+        
+        signUpService.execute(in: dispatcher) { (user) in
+            // Open user session
+            
+            UserSessionController.shared.updateCurrentSession(user: user, userToken: user.token)
+            
+            NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
+        }
+        
+        
         
         print(123)
         

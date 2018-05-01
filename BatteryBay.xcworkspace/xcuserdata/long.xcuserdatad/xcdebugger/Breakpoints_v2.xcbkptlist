@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BatteryBay/Networking/UserRequest/UserSignUpService.swift"
-            timestampString = "546767107.424441"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901695.65093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "execute(in:completionHandler:)"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "handleUploadImage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,125 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BatteryBay/Networking/NetworkDispatcher.swift"
-            timestampString = "546767107.424508"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901695.651366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "execute(request:completionHandler:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "handleUploadImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901695.651606"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "handleUploadImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901695.651823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "handleUploadImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.SessionManager.MultipartFormDataEncodingResult) -&gt; () in BatteryBay.UploadViewController.(handleUploadImage in _01964C72EB59D76E89591825A2534C8C)() -&gt; ()"
+                  moduleName = "BatteryBay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/long/Documents/Ios-udemy/BatteryBay/BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+                  timestampString = "546901695.7879"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "114">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in closure #2 (Alamofire.SessionManager.MultipartFormDataEncodingResult) -&gt; () in BatteryBay.UploadViewController.(handleUploadImage in _01964C72EB59D76E89591825A2534C8C)() -&gt; ()"
+                  moduleName = "BatteryBay"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/long/Documents/Ios-udemy/BatteryBay/BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+                  timestampString = "546901695.790271"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "22">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901695.652027"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
+            landmarkName = "handleUploadImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901721.447669"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "handleUploadImage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BatteryBay/Controllers/UploadViewController/UploadViewController.swift"
+            timestampString = "546901811.505403"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "handleUploadImage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

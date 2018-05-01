@@ -129,12 +129,12 @@ class SignUpViewController: UIViewController {
         let signUpService = UserSignUpService(username: email, password: password)
         
         signUpService.execute(in: dispatcher) { (user) in
+            // Open user session
             
+            UserSessionController.shared.updateCurrentSession(user: user, userToken: user.token)
+            
+            NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
         }
-        
-        //NotificationCenter.default.post(name: NSNotification.Name("loginOK"), object: nil)
-        
-        print(123)
         
     }
     
