@@ -1,0 +1,92 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - APNumberPad (1.2.0)
+  - Cosmos (8.0.2)
+  - DLRadioButton (1.4.12)
+  - FTIndicator (1.2.8):
+    - FTIndicator/FTNotificationIndicator (= 1.2.8)
+    - FTIndicator/FTProgressIndicator (= 1.2.8)
+    - FTIndicator/FTToastIndicator (= 1.2.8)
+  - FTIndicator/FTNotificationIndicator (1.2.8)
+  - FTIndicator/FTProgressIndicator (1.2.8)
+  - FTIndicator/FTToastIndicator (1.2.8)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.7.0):
+    - GoogleMaps (= 2.7.0)
+    - GooglePlaces (= 2.7.0)
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
+  - ImageSlideshow (1.5.3):
+    - ImageSlideshow/Core (= 1.5.3)
+  - ImageSlideshow/Core (1.5.3)
+  - MIBlurPopup (0.1.3)
+  - SnapKit (4.0.0)
+  - swiftScan (1.1.3)
+  - SwiftyButton (0.8.0)
+  - SwiftyJSON (4.1.0)
+  - SWRevealViewController (2.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 3.1)
+  - APNumberPad
+  - Cosmos (~> 8.0)
+  - DLRadioButton (~> 1.4)
+  - FTIndicator
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+  - ImageSlideshow (~> 1.2)
+  - MIBlurPopup
+  - SnapKit
+  - swiftScan
+  - SwiftyButton
+  - SwiftyJSON
+  - SWRevealViewController
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - APNumberPad
+    - Cosmos
+    - DLRadioButton
+    - FTIndicator
+    - GoogleMaps
+    - GooglePlacePicker
+    - GooglePlaces
+    - ImageSlideshow
+    - MIBlurPopup
+    - SnapKit
+    - swiftScan
+    - SwiftyButton
+    - SwiftyJSON
+    - SWRevealViewController
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  APNumberPad: a63526db2db628824ae92e7124719e87e0f1c969
+  Cosmos: 007c0b8e33a85e5363911bdd933571bbe221f7ef
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  FTIndicator: 5218a42e6a3bb6623f58e4931fc36bb09b7e1b78
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  ImageSlideshow: 24a1184909f589379ba2527ebcc77996881bb1f2
+  MIBlurPopup: e0834e469074cabf65a0ca6e6d900c84d48f8a4f
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  swiftScan: ad753846f4292c19a376dd159db035d62b689458
+  SwiftyButton: 093e3fe2becf3ae31c0f6c1c6987b79a93fb3ecb
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+
+PODFILE CHECKSUM: cba7caf0ec9a613e35dbcd4c77f2fad94eadd509
+
+COCOAPODS: 1.5.0
