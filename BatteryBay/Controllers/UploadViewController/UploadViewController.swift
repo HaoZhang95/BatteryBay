@@ -109,6 +109,8 @@ class UploadViewController: UIViewController {
         
         var parameters = ["userId" : id, "category" : category]
         
+        MBProgressHUD.showAdded(to: view, animated: true)
+        
         Alamofire.upload(multipartFormData: { (multipartFormData) in
             //multipartFormData.append(imageData!, withName: "pic")
             multipartFormData.append(imageData!, withName: "pic", fileName: "image.png", mimeType: "image/png")
@@ -121,6 +123,8 @@ class UploadViewController: UIViewController {
                 upload.responseJSON(completionHandler: { (response) in
                     print(response)
                     print()
+                    
+                    MBProgressHUD.hide(for: self.view, animated: true)
                 })
             case .failure(let error):
                 print(error.localizedDescription)
