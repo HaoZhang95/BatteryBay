@@ -29,6 +29,7 @@ class UploadViewController: UIViewController {
     
     lazy var sendButton: UIBarButtonItem = {
         let btn = UIBarButtonItem(image: #imageLiteral(resourceName: "send-button"), style: .plain, target: self, action: #selector(handleUploadImage))
+        btn.isEnabled = false
         return btn
     }()
     
@@ -93,9 +94,11 @@ class UploadViewController: UIViewController {
         
         print(123)
         
+        guard let category = categoriesTextField.text else { return }
+        
         let image = uploadImageView.image
         
-        let imageData = UIImageJPEGRepresentation(image!, 1)
+        let imageData = UIImagePNGRepresentation(image!)
         
         let url = "https://metropolia.herokuapp.com/image"
         let accessToken = UserSessionController.shared.user?.token
@@ -104,17 +107,15 @@ class UploadViewController: UIViewController {
         
         let header = ["x-access-token" : accessToken]
         
-        var parameters = ["userId" : id, "category" : "battery"]
-        
-        let at = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcnJ5bmd1eWVubG9uZzEyZHNhZCIsIl9pZCI6IjVhZTg2ZjQzZTYwMjhiMDAwNDE1YTFlOCIsImlhdCI6MTUyNTIwNzk1OCwiZXhwIjoxNTI1NDY3MTU4fQ.xN-aSjIH6vjyqRua0J7sth2ly_jeNj-Xqb_OizmcFMk"
+        var parameters = ["userId" : id, "category" : category]
         
         Alamofire.upload(multipartFormData: { (multipartFormData) in
-            multipartFormData.append(imageData!, withName: "pic")
-            
+            //multipartFormData.append(imageData!, withName: "pic")
+            multipartFormData.append(imageData!, withName: "pic", fileName: "image.png", mimeType: "image/png")
             for (key, value) in parameters {
                 multipartFormData.append((value?.data(using: String.Encoding(rawValue: String.Encoding.utf8.rawValue)))!, withName: key)
             }
-        }, usingThreshold: UInt64.init(), to: url, method: .post, headers: ["x-access-token": at]) { (encodingResult) in
+        }, usingThreshold: UInt64.init(), to: url, method: .post, headers: ["x-access-token": accessToken!]) { (encodingResult) in
             switch encodingResult {
             case .success(let upload, _, _):
                 upload.responseJSON(completionHandler: { (response) in
