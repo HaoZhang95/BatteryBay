@@ -1551,7 +1551,7 @@
         <!--About Us Controller-->
         <scene sceneID="TKe-U8-wMG">
             <objects>
-                <viewController id="jQq-dK-Fom" customClass="AboutUsController" customModule="OFO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jQq-dK-Fom" customClass="AboutUsController" customModule="SearchPart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zx8-hc-kAV"/>
                         <viewControllerLayoutGuide type="bottom" id="vxG-xA-oOE"/>
@@ -1605,7 +1605,6 @@
         <!--Navigation Controller-->
         <scene sceneID="2B9-K2-cyx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gBk-9m-Ahr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p9a-GL-fF6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CZ7-ZG-fbM">
@@ -1617,6 +1616,7 @@
                         <segue destination="jQq-dK-Fom" kind="relationship" relationship="rootViewController" id="52y-xw-AC4"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBk-9m-Ahr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="738" y="-1"/>
         </scene>

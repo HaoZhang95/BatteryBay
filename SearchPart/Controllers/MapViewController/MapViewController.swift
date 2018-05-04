@@ -92,8 +92,9 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         locationMgr.delegate = self
         
         self.navigationItem.leftBarButtonItem?.image = #imageLiteral(resourceName: "leftTopImage").withRenderingMode(.alwaysOriginal)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"HomePage_rightTopImage_Click")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(showPlacesList))
-        self.navigationItem.titleView = UIImageView.init(image: #imageLiteral(resourceName: "ofoLogo"))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named:"HomePage_MyStroke")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(showPlacesList))
+       
+        self.navigationItem.title = "Battery Bay"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
 
@@ -297,15 +298,19 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
     }
     
     func createMarker(placeWhere: Place) {
-        let marker = GMSMarker()
-        if (placeWhere.isRecycleSpot) {
-            marker.icon = UIImage(named: "map-marker-blue-128")
+        
+        DispatchQueue.main.async {
+            let marker = GMSMarker()
+            if (placeWhere.isRecycleSpot) {
+                marker.icon = UIImage(named: "map-marker-blue-128")
+            }
+            marker.infoWindowAnchor = CGPoint(x: 0.5, y: -0.5)
+            marker.opacity = 0.8
+            marker.userData = placeWhere
+            marker.position = placeWhere.coordinate
+            marker.map = self.mapView
         }
-        marker.infoWindowAnchor = CGPoint(x: 0.5, y: -0.5)
-        marker.opacity = 0.8
-        marker.userData = placeWhere
-        marker.position = placeWhere.coordinate
-        marker.map = mapView
+        
     }
     
     
