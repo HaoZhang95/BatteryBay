@@ -1,10 +1,36 @@
-//
-//  AppDelegate.swift
-//  SearchPart
-//
-//  Created by iosdev on 4/30/18.
-//  Copyright © 2018 iosdev. All rights reserved.
-//
+
+// MARK : Battery Bay Project Of Team 3
+
+//                      d*##$.
+// zP"""""$e.           $"    $o
+//4$       '$          $"      $
+//'$        '$        J$       $F
+// 'b        $k       $>       $
+//  $k        $r     J$       d$
+//  '$         $     $"       $~
+//   '$        "$   '$E       $
+//    $         $L   $"      $F ...
+//     $.       4B   $      $$$*"""*b
+//     '$        $.  $$     $$      $F
+//      "$       R$  $F     $"      $
+//       $k      ?$ u*     dF      .$
+//       ^$.      $$"     z$      u$$$$e
+//        #$b             $E.dW@e$"    ?$
+//         #$           .o$$# d$$$$c    ?F
+//          $      .d$$#" . zo$>   #$r .uF
+//          $L .u$*"      $&$$$k   .$$d$$F
+//           $$"            ""^"$$$P"$P9$
+//          JP              .o$$$$u:$P $$
+//          $          ..ue$"      ""  $"
+//         d$          $F              $
+//         $$     ....udE             4B
+//          #$    """"` $r            @$
+//           ^$L        '$            $F
+//             RN        4N           $
+//              *$b                  d$
+//               $$k                 $F
+//               $$b                $F
+
 
 import UIKit
 import GoogleMaps
@@ -18,9 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
         GMSServices.provideAPIKey("AIzaSyBubQj233wKjq2wZBhXCHXvveltTtmcVlo")
     

@@ -1,10 +1,6 @@
-//
-//  Colors.swift
-//  sfu_commute_V.2
-//
-//  Created by Tianxiong He on 2016-10-29.
-//  Copyright © 2016 jyotsna jaswal. All rights reserved.
-//
+
+// MARK : This class defines static colors
+
 import UIKit
 import Foundation
 

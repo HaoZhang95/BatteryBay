@@ -1,10 +1,5 @@
-//
-//  ToastHelper.swift
-//  SearchPart
-//
-//  Created by iosdev on 5/2/18.
-//  Copyright © 2018 iosdev. All rights reserved.
-//
+
+// MARK : Show Toast
 
 import Foundation
 import FTIndicator

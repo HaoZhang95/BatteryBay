@@ -7,21 +7,20 @@ target 'SearchPart' do
 
   # Pods for SearchPart
 
-	source 'https://github.com/CocoaPods/Specs.git'
+	source 'https://github.com/CocoaPods/Specs.git' # For Map Services
 	pod 'GoogleMaps'
 	pod 'GooglePlaces'
     pod 'GooglePlacePicker'
 	
 
 	pod 'APNumberPad'
-
 	pod 'Alamofire'
   	pod 'SwiftyJSON'
   	pod 'SwiftyButton'
   	pod 'SnapKit'
-	pod 'swiftScan'                 #swift很好用的二维码扫描第三方库
-	pod 'FTIndicator'               #提示框
-	pod 'MIBlurPopup'               #pop弹窗
+	pod 'swiftScan'                 
+	pod 'FTIndicator'
+	pod 'MIBlurPopup'
 	pod 'SWRevealViewController'
 	pod 'DLRadioButton', '~> 1.4'
     pod 'Cosmos', '~> 8.0'

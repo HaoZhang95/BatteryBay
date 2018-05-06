@@ -1,8 +1,8 @@
 
+//- MARK: Input bar code manully page
 
 import UIKit
 import APNumberPad
-//import AVFoundation
 
 class InputController: UIViewController,APNumberPadDelegate,UITextFieldDelegate {
     var isFlashOn = false
@@ -12,7 +12,7 @@ class InputController: UIViewController,APNumberPadDelegate,UITextFieldDelegate 
     
     @IBAction func flashBtnTap(_ sender: UIButton) {
 
-        turnTorch()
+        Util.turnTorch()
         
         if isFlashOn {
             flashBtn.setImage(#imageLiteral(resourceName: "lightclose"), for: .normal)
@@ -112,16 +112,9 @@ class InputController: UIViewController,APNumberPadDelegate,UITextFieldDelegate 
     
     
     func checkPass()  {
-        
-        //showPasscode  动画转场
-        
-        if !inputTextField.text!.isEmpty {//不为空
-//            let code = inputTextField.text!
+        if !inputTextField.text!.isEmpty {
             code = inputTextField.text!
-            
-            print("你输入的code是: \(code)")
             self.performSegue(withIdentifier: "showResultFromInput", sender: self)
-            
         }
     }
 
@@ -131,39 +124,9 @@ class InputController: UIViewController,APNumberPadDelegate,UITextFieldDelegate 
             destVC.batteryModel = self.code
         }
     }
-    
-//    func turnTorch()  {
-//        guard let device  = AVCaptureDevice.default(for: AVMediaType.video) else { return }
-//
-//        if device.hasTorch && device.isTorchAvailable {
-//            try? device.lockForConfiguration()
-//
-//            if device.torchMode == .off {
-//                device.torchMode = .on
-//            } else {
-//                device.torchMode = .off
-//            }
-//
-//            device.unlockForConfiguration()
-//        }
-//
-//    }
-    
-    
-    //视图返回
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewDidAppear(animated)
-//        navigationController?.navigationBar.barStyle = .default
-//        navigationController?.navigationBar.tintColor = UIColor.black
-//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-//        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:([self.navigationController.viewControllers count] -2)] animated:YES];
-        
-////     self.navigationController?.popToRootViewController(animated: true)
-//        let firstView = ViewController()
-//        //方式二：返回至指定的ViewController
-//        self.navigationController?.popToViewController(firstView , animated: true)
-        
     }
-    
     
 }

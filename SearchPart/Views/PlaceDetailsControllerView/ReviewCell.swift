@@ -1,10 +1,3 @@
-//
-//  ReviewCell.swift
-//  Places
-//
-//  Created by Karthi Ponnusamy on 10/4/17.
-//  Copyright © 2017 Karthi Ponnusamy. All rights reserved.
-//
 
 import UIKit
 import Cosmos

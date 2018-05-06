@@ -1,10 +1,5 @@
-//
-//  FirstViewController.swift
-//  Places
-//
-//  Created by Karthi Ponnusamy on 1/4/17.
-//  Copyright © 2017 Karthi Ponnusamy. All rights reserved.
-//
+
+//- MARK: Show avaliable places info in a table view
 
 import UIKit
 import CoreLocation
@@ -21,11 +16,8 @@ class PlacesViewController: UIViewController {
     var lastLocationError: Error?
     var searchResults: [Place] = []
 
-
-
     @IBOutlet weak var tableView: UITableView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        

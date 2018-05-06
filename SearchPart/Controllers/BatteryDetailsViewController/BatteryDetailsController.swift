@@ -1,5 +1,5 @@
 
-
+//- MARK: Battery detail page
 import UIKit
 import FTIndicator
 

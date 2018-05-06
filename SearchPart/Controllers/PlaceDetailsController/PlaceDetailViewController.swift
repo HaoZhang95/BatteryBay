@@ -1,10 +1,5 @@
-//
-//  PlaceDetailViewController.swift
-//  Places
-//
-//  Created by Karthi Ponnusamy on 5/4/17.
-//  Copyright © 2017 Karthi Ponnusamy. All rights reserved.
-//
+
+//- MARK: Customized place detail page
 
 import UIKit
 import ImageSlideshow

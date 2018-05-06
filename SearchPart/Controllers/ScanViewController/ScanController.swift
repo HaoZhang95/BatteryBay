@@ -1,10 +1,5 @@
-//
-//  ScanController.swift
-//  OFO
-//  扫码界面
-//  Created by iMac on 2017/6/5.
-//  Copyright © 2017年 JoJo. All rights reserved.
-//
+
+//- MARK: Scan Bar code page
 
 import UIKit
 import AVFoundation
@@ -102,7 +97,6 @@ class ScanController: LBXScanViewController {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 
-    //转场动画
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showResultFromScan" {
             print("准备跳转获取解锁码界面")

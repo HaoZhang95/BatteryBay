@@ -1,6 +1,5 @@
-//
-//  InitialViewController.swift
-//MARK: if user loggin and doesn't logout last time,
+
+//- MARK: if user loggin and doesn't logout last time,
 // when reopen this open will lead to home page, instead of loggin one more time.
 
 import Foundation

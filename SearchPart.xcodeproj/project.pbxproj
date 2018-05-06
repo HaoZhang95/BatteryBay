@@ -20,7 +20,6 @@
 		6A930AE72096FC5000A79943 /* locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AE62096FC5000A79943 /* locations.swift */; };
 		6A930AE92097373500A79943 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AE82097373500A79943 /* ErrorViewController.swift */; };
 		6A930AEB20974E8300A79943 /* BatteryDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AEA20974E8300A79943 /* BatteryDetailsController.swift */; };
-		6A930AED209757B300A79943 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AEC209757B200A79943 /* UIViewHelper.swift */; };
 		6A930AF4209893C100A79943 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AF3209893C100A79943 /* PlaceDetailViewController.swift */; };
 		6A930AF62098966300A79943 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AF52098966300A79943 /* Place.swift */; };
 		6A930AF82098966B00A79943 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A930AF72098966B00A79943 /* Review.swift */; };
@@ -68,7 +67,6 @@
 		6A930AE62096FC5000A79943 /* locations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = locations.swift; sourceTree = "<group>"; };
 		6A930AE82097373500A79943 /* ErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		6A930AEA20974E8300A79943 /* BatteryDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryDetailsController.swift; sourceTree = "<group>"; };
-		6A930AEC209757B200A79943 /* UIViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		6A930AF3209893C100A79943 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
 		6A930AF52098966300A79943 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		6A930AF72098966B00A79943 /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				6A930AD220966C9900A79943 /* Info.plist */,
 				6A930ACA20966C9900A79943 /* Main.storyboard */,
 				6A930B0F2099B51E00A79943 /* DefaultFiles */,
-				6A930B0D2099B4FC00A79943 /* AnimationFiles */,
 				6A930B0C2099B4E100A79943 /* Utils */,
 				6A930B0B2099B4C900A79943 /* Controllers */,
 				6A930B0A2099B4C300A79943 /* Models */,
@@ -162,7 +159,6 @@
 				6A930B262099B7DB00A79943 /* PlacesListViewController */,
 				6A930B1E2099B6CF00A79943 /* PlaceDetailsControllerView */,
 				6A930B102099B54E00A79943 /* MapViewControllerView */,
-				6A930B112099B55C00A79943 /* OnBoardingControllerView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,14 +187,8 @@
 				6A930B222099B74E00A79943 /* BatteryDetailsViewController */,
 				6A930B212099B73A00A79943 /* ScanViewController */,
 				6A930B202099B71E00A79943 /* InputViewController */,
-				6A930B1C2099B5DF00A79943 /* OnBoardingViewController */,
 				6A930B1B2099B5D600A79943 /* LoginViewController */,
-				6A930B1A2099B5CD00A79943 /* MZFRootContainerViewControllers */,
-				6A930B192099B5C300A79943 /* MainTabBarController */,
-				6A930B182099B5B500A79943 /* UserSessionController */,
 				6A930B172099B5A900A79943 /* SignUpViewController */,
-				6A930B162099B59900A79943 /* MainPageViewController */,
-				6A930B152099B58F00A79943 /* UploadViewController */,
 				6A930B142099B58400A79943 /* MapViewController */,
 			);
 			path = Controllers;
@@ -208,7 +198,6 @@
 			isa = PBXGroup;
 			children = (
 				6A930AFB209896F000A79943 /* Constants.swift */,
-				6A930AEC209757B200A79943 /* UIViewHelper.swift */,
 				6A930AE22096F85F00A79943 /* Colors.swift */,
 				6A930AF9209896A300A79943 /* Util.swift */,
 				6A9496D62099E8C700AEE616 /* ToastHelper.swift */,
@@ -216,13 +205,6 @@
 				6A930B0E2099B50A00A79943 /* Networking */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		6A930B0D2099B4FC00A79943 /* AnimationFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AnimationFiles;
 			sourceTree = "<group>";
 		};
 		6A930B0E2099B50A00A79943 /* Networking */ = {
@@ -257,33 +239,12 @@
 			path = MapViewControllerView;
 			sourceTree = "<group>";
 		};
-		6A930B112099B55C00A79943 /* OnBoardingControllerView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OnBoardingControllerView;
-			sourceTree = "<group>";
-		};
 		6A930B142099B58400A79943 /* MapViewController */ = {
 			isa = PBXGroup;
 			children = (
 				6A930AC820966C9900A79943 /* MapViewController.swift */,
 			);
 			path = MapViewController;
-			sourceTree = "<group>";
-		};
-		6A930B152099B58F00A79943 /* UploadViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UploadViewController;
-			sourceTree = "<group>";
-		};
-		6A930B162099B59900A79943 /* MainPageViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainPageViewController;
 			sourceTree = "<group>";
 		};
 		6A930B172099B5A900A79943 /* SignUpViewController */ = {
@@ -294,40 +255,12 @@
 			path = SignUpViewController;
 			sourceTree = "<group>";
 		};
-		6A930B182099B5B500A79943 /* UserSessionController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserSessionController;
-			sourceTree = "<group>";
-		};
-		6A930B192099B5C300A79943 /* MainTabBarController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MainTabBarController;
-			sourceTree = "<group>";
-		};
-		6A930B1A2099B5CD00A79943 /* MZFRootContainerViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MZFRootContainerViewControllers;
-			sourceTree = "<group>";
-		};
 		6A930B1B2099B5D600A79943 /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
 				6A930B2A2099CF1200A79943 /* LoginViewController.swift */,
 			);
 			path = LoginViewController;
-			sourceTree = "<group>";
-		};
-		6A930B1C2099B5DF00A79943 /* OnBoardingViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OnBoardingViewController;
 			sourceTree = "<group>";
 		};
 		6A930B1D2099B64500A79943 /* UserRequest */ = {
@@ -652,7 +585,6 @@
 				6A9496D22099E2AE00AEE616 /* User.swift in Sources */,
 				6A930AF62098966300A79943 /* Place.swift in Sources */,
 				6A930B342099DDB300A79943 /* UserLoginService.swift in Sources */,
-				6A930AED209757B300A79943 /* UIViewHelper.swift in Sources */,
 				6A930B3D2099DE6500A79943 /* Request.swift in Sources */,
 				6A930AE32096F85F00A79943 /* Colors.swift in Sources */,
 				6A930AC920966C9900A79943 /* MapViewController.swift in Sources */,

@@ -1,10 +1,5 @@
-//
-//  mapMarkerInfoWindow.swift
-//  sfu_commute_V.2
-//
-//  Created by Tianxiong He on 2016-11-10.
-//  Copyright © 2016 Lightspeed-Tech. All rights reserved.
-//
+
+// MARK : Customized map marker
 
 import UIKit
 import SwiftyButton

@@ -1,10 +1,5 @@
-//
-//  ErrorViewController.swift
-//  OFO
-//
-//  Created by iMac on 2017/6/9.
-//  Copyright © 2017年 JoJo. All rights reserved.
-//
+
+//- MARK: Show error view when user scan an invalid bar code.
 
 import UIKit
 import MIBlurPopup

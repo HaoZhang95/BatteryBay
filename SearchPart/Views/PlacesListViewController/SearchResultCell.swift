@@ -1,10 +1,5 @@
-//
-//  SearchResultCell.swift
-//  Places
-//
-//  Created by Karthi Ponnusamy on 1/4/17.
-//  Copyright © 2017 Karthi Ponnusamy. All rights reserved.
-//
+
+// MARK : Customized table cell 
 
 import UIKit
 import Cosmos

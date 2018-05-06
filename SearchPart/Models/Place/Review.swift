@@ -1,10 +1,5 @@
-//
-//  Photo.swift
-//  Places
-//
-//  Created by Karthi Ponnusamy on 5/4/17.
-//  Copyright © 2017 Karthi Ponnusamy. All rights reserved.
-//
+
+// MARK : People's review on a certain place
 
 import Foundation
 

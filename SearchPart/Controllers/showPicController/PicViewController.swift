@@ -1,5 +1,4 @@
 
-
 import UIKit
 import FTIndicator
 
@@ -65,6 +64,10 @@ class PicViewController: UIViewController,UITextFieldDelegate {
         navigationController?.popViewController(animated: true)
     }
     
+    
+    // MARK : Do ML Part here to detect the picture category.
+    // In this case we alsway regard the image as a Battery
+    // Do More Things Here
     @IBAction func detectCategory(_ sender: UIButton) {
         print("begin detect category, do Some detection here")
         if self.category == "" {

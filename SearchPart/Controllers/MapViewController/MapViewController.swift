@@ -1,13 +1,7 @@
-//
-//  ViewController.swift
-//  SearchPart
-//
-//  Created by iosdev on 4/30/18.
-//  Copyright © 2018 iosdev. All rights reserved.
-//
+
+//- MARK: Map controller, Main operations are here
 
 import UIKit
-//import MBProgressHUD
 import Alamofire
 import GoogleMaps
 import GooglePlaces
@@ -38,7 +32,8 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
     func showAlertToChoosePic() {
         let alertVC = UIAlertController(title: "", message: "Please select one Action", preferredStyle: .actionSheet)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancel) in
-            self.dismiss(animated: true, completion: nil)
+            alertVC.dismiss(animated: true, completion: nil)
+            
         }
         let openCamaraAction = UIAlertAction(title: "Take new photo", style: .default) { (openCameraAction) in
             // Open the camera
@@ -76,16 +71,13 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         dismiss(animated: true, completion: nil)
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //- MARK: show default address whenever user open this page
         let camera = GMSCameraPosition.camera(withLatitude: defaultAddress["lat"]!, longitude: defaultAddress["lon"]!, zoom: 8)
         
         placesClient = GMSPlacesClient.shared()
-        
         mapView = GMSMapView.map(withFrame:  UIScreen.main.bounds, camera: camera)
         mapView?.center = self.view.center
         mapView?.delegate = self
@@ -97,7 +89,6 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         self.navigationItem.title = "Battery Bay"
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
-
         view.addSubview(mapView!)
         view.bringSubview(toFront: panelView)
 
@@ -106,12 +97,8 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         let showAvaliableSpotsReceiver = NSNotification.Name(rawValue:"showAvaliableSpots")
         NotificationCenter.default.addObserver(self, selector: #selector(refreshAvaliableSpotsBaseOnItem(noty: )), name: showAvaliableSpotsReceiver, object: nil)
         
-        
-        //视图
-        //最开始启动容器
-        
+        //- MARK: initialize side bar
         if let revealVC = revealViewController() {
-            
             revealVC.rearViewRevealWidth = 280
             navigationItem.leftBarButtonItem?.target = revealVC
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -119,11 +106,10 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         }
     }
     
+    //- MARK: Refresh map based on keywords that is related to item's category
     @objc func refreshAvaliableSpotsBaseOnItem(noty: Notification) -> Void {
-        print("refreshAvaliableSpotsBaseOnItem")
 
         if let keyword = noty.object{
-            print("接受到的keyword: \(keyword)")
             mapView?.clear()
             loadLocation(keyword: keyword as! String)
         }
@@ -183,6 +169,7 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         }
     }
     
+    //- MARK: parse json which returned from google map web services
     func parse(dictionary: [String: Any]) -> [Place]{
         guard let status = dictionary["status"] as? String, status == "OK"  else {
             print("Invalid status")
@@ -236,15 +223,12 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         return searchResults
     }
     
-    
+    //- MARK: Calculate Distance from user's cuurent location to a certain spots
     func calculateDistanceToStore(nowCoordinate: CLLocation, storeCoordinate: CLLocation) -> Double? {
-        
-        
         let distanceInMeter = nowCoordinate.distance(from: storeCoordinate)
         let distanceinKiloMeter = distanceInMeter/1000
         return distanceinKiloMeter
     }
-    
     
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -312,8 +296,7 @@ class MapViewController: UIViewController,UIImagePickerControllerDelegate,UINavi
         }
         
     }
-    
-    
+
     @objc func showPlacesList() {
         if searchResults.count > 0 {
             performSegue(withIdentifier: "showPlacesList", sender: self)
@@ -379,8 +362,7 @@ extension MapViewController: GMSMapViewDelegate{
             
             self.view.addSubview(infoWindow)
         }
-        
-        
+
         return true
     }
     
