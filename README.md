@@ -29,7 +29,7 @@ For further development, this app currently using server and APIs provided in my
 |![Main](https://imgur.com/UZGlza2.png)     |![Place](https://imgur.com/SiFI0DC.png)|
 
 ## More
-|                    Route                     |                  Scan                   |                  Indicator               |                  Product               |      
+|                    Route                     |                  Scan                   |                  Indicator               |   
 | ------------------------------------------- |--------------------------------------------|-----------------------------------------|
 |![Route](https://imgur.com/9vLQkjI.png)     |![Scan](https://imgur.com/PzxpNK8.png) |![Indicator](https://imgur.com/MLETK5U.png)|
 
