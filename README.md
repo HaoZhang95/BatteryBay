@@ -26,12 +26,12 @@ For further development, this app currently using server and APIs provided in my
 ## Screenshots
 |                    MAIN                     |                  PLACE               |     
 | ------------------------------------------- |--------------------------------------------|
-|![Main](https://imgur.com/UZGlza2)     |![Place](https://imgur.com/SiFI0DC)|
+|![Main](https://imgur.com/UZGlza2.png)     |![Place](https://imgur.com/SiFI0DC.png)|
 
 ## More
 |                    Route                     |                  Scan                   |                  Indicator               |                  Product               |      
 | ------------------------------------------- |--------------------------------------------|-----------------------------------------|
-|![Route](https://imgur.com/9vLQkjI)     |![Scan](https://imgur.com/PzxpNK8) |![Indicator](https://imgur.com/MLETK5U)|
+|![Route](https://imgur.com/9vLQkjI.png)     |![Scan](https://imgur.com/PzxpNK8.png) |![Indicator](https://imgur.com/MLETK5U.png)|
 
 
 ## Notice
